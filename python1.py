@@ -1,0 +1,4 @@
+i = 1
+while i <= 5_000:
+    print(i)
+    i = i + 1

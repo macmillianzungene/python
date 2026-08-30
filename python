@@ -1,0 +1,15 @@
+# The Secure Password Hint Tool
+# Helps users remember their password by showing a safe hint (not the full password).
+
+# Ask user for their secret password
+password = input("Enter your secret password: ")
+
+# Clean up any accidental leading/trailing spaces
+password = password.strip()
+
+# Grab the first and last letter using string indexing
+first_letter = password[0]
+last_letter = password[-1]
+
+# Print the hint with uppercase letters
+print(f"Your password hint: It starts with {first_letter.upper()} and ends with {last_letter.upper()}")
